@@ -1,0 +1,76 @@
+section {
+    margin: 300px 1px;
+}
+
+.item a {
+    color: white; 
+    text-decoration: none;
+}
+
+.seznam {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    width: 100%; 
+    font-size: 24px;
+}
+
+.seznam a {
+    text-decoration: none; 
+    color: white;
+    display: block;
+    padding: 10px; 
+    background-color: blue; 
+    border-radius: 5px; 
+    width: calc(100%);
+    text-align: center;
+}
+
+.seznam a:hover {
+    background-color: darkblue;
+}
+
+.item {
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid lightblue;
+    background-color: blue;
+    height: 50px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(20% - 20px);
+    box-sizing: border-box;
+}   
+
+h2 {
+    text-decoration: underline;
+}
+
+.fotky {
+    display: flex;
+    flex-wrap: wrap; /* Allow photos to wrap to the next row */
+    flex-direction: column;
+    gap: 15px; /* Reduce the gap between photos */
+    justify-content: center; /* Center the photos */
+}
+
+.fotky section {
+    margin: 0; /* Remove extra margin around sections */
+    padding: 0; /* Remove extra padding */
+    display: block; /* Keep sections as block elements */
+    width: auto; /* Ensure sections only take up as much space as needed */
+}
+
+.fotky img {
+    max-width: 500px; /* Adjust the size of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0; /* Remove extra margin around images */
+    padding: 0; /* Remove extra padding */
+    display: block; /* Ensure images don't add extra space */
+}
