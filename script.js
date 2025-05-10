@@ -1,15 +1,36 @@
 const ul = document.getElementById("seznam");
+const nazvyOtazek = ["Hospodářský proces",
+"Podnikání, FO",
+"Podnikání, PO",
+"výroba, podnik",
+"výroba, podnik",
+"Dl. maj., Odpisy",
+"Oběžný majetek",
+"Marketing",
+"Management",
+"Trh",
+"Nár. Hospod., Hosp. cykl.",
+"Nár. Hospod., z. obchod, MFI",
+"Personalistika",
+"Pracovně právní vztah",
+"Mzda",
+"Daňová soustava",
+"Daň z příjmu FO",
+"Bankovní systém",
+"Pojišťovnictví",
+"Osobní finance",];
+
 
 // Generate the list of questions
-for (let i = 1; i <= 25; i++) {
+for (let i = 0; i < 20; i++) {
     const li = document.createElement('li');
     li.classList.add('item');
 
     // Wrap the entire <li> in an <a> tag
     const a = document.createElement('a');
-    a.href = `#${i}`;
-    a.textContent = `otazka ${i}`;
-    a.style.display = 'block'; // Make the <a> tag fill the entire <li>
+    a.href = `#${i+1}`;
+    a.textContent = `${i+1} - ${nazvyOtazek[i]}`; 
+    a.style.display = 'block'; 
     li.appendChild(a);
 
     ul.appendChild(li);
@@ -21,6 +42,7 @@ for (let i = 1; i <= 25; i++) {
    photoFolder.push(i+'_1.jpg');
    photoFolder.push(i+'_2.jpg');
    photoFolder.push(i+'_3.jpg');
+   photoFolder.push(i+'_4.jpg');
 }
 
 const fotkyDiv = document.querySelector('.fotky');
