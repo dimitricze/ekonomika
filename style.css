@@ -32,6 +32,8 @@ section {
     border-radius: 5px; 
     width: calc(100%);
     text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+
 }
 
 .seznam a:hover {
@@ -41,9 +43,6 @@ section {
 .item {
     margin: 5px;
     border-radius: 10px;
-    border: 1px solid lightblue;
-    background-color: blue;
-    height: 50px;
     padding: 4px;
     display: flex;
     align-items: center;
@@ -68,7 +67,7 @@ h2 {
     margin: 0; /* Remove extra margin around sections */
     padding: 0; /* Remove extra padding */
     display: block; /* Keep sections as block elements */
-    width: auto; /* Ensure sections only take up as much space as needed */
+    width: 500px; /* Ensure sections only take up as much space as needed */
 }
 
 .fotky img {
